@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+    <changeSet id="00000000000000-01" author="Charles Chaclim">
+        <insert tableName="estado">
+            <column name="name" value="Acre"/>
+            <column name="sigla" value="AC"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Alagoas"/>
+            <column name="sigla" value="AL"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Amapá"/>
+            <column name="sigla" value="AP"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Amazonas"/>
+            <column name="sigla" value="AM"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Bahia"/>
+            <column name="sigla" value="BA"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Ceará"/>
+            <column name="sigla" value="CE"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Espírito Santo"/>
+            <column name="sigla" value="ES"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Goiás"/>
+            <column name="sigla" value="GO"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Maranhão"/>
+            <column name="sigla" value="MA"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Mato Grosso"/>
+            <column name="sigla" value="MT"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Mato Grosso do Sul"/>
+            <column name="sigla" value="MS"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Minas Gerais"/>
+            <column name="sigla" value="MG"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Pará"/>
+            <column name="sigla" value="PA"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Paraíba"/>
+            <column name="sigla" value="PB"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Paraná"/>
+            <column name="sigla" value="PR"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Pernambuco"/>
+            <column name="sigla" value="PE"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Piauí"/>
+            <column name="sigla" value="PI"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Rio de Janeiro"/>
+            <column name="sigla" value="RJ"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Rio Grande do Norte"/>
+            <column name="sigla" value="RN"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Rio Grande do Sul"/>
+            <column name="sigla" value="RS"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Rondônia"/>
+            <column name="sigla" value="RO"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Roraima"/>
+            <column name="sigla" value="RR"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Santa Catarina"/>
+            <column name="sigla" value="SC"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="São Paulo"/>
+            <column name="sigla" value="SP"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Sergipe"/>
+            <column name="sigla" value="SE"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Tocantins"/>
+            <column name="sigla" value="TO"/>
+        </insert>
+
+        <insert tableName="estado">
+            <column name="name" value="Distrito Federal"/>
+            <column name="sigla" value="DF"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

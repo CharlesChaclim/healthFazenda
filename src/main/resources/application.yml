@@ -1,0 +1,46 @@
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+  compression:
+    enabled: true
+    mime-types: text/html,text/css,application/javascript,application/json
+
+logging:
+  level:
+    ROOT: error
+    br.com.check.HealthFazenda: INFO
+
+spring:
+  application:
+    name: healthFazenda
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/healthFazenda
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: false
+    open-in-view: false
+    properties:
+      hibernate:
+        generate_statistics: false
+        default_schema: healthFazenda
+        id.new_generator_mappings: true
+    hibernate:
+      ddl-auto: validate
+  liquibase:
+    default-schema: healthFazenda
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+use-swagger: true

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+    <changeSet id="00000000000000-1" author="Charles Chaclim">
+        <createTable tableName="estado">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)"/>
+            <column name="sigla" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="00000000000000-2" author="Charles Chaclim">
+        <createTable tableName="historico_disponibilidade">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="data" type="datetime"/>
+            <column name="estado_id" type="bigint"/>
+            <column name="autorizacao" type="ENUM('DISPONIVEL','INDISPONIVEL')"/>
+            <column name="inutilizacao" type="ENUM('DISPONIVEL','INDISPONIVEL')"/>
+            <column name="retorno_autorizacao" type="ENUM('DISPONIVEL','INDISPONIVEL')"/>
+            <column name="consulta_protocolo" type="ENUM('DISPONIVEL','INDISPONIVEL')"/>
+            <column name="status_servico" type="ENUM('DISPONIVEL','INDISPONIVEL')"/>
+            <column name="consulta_cadastro" type="ENUM('DISPONIVEL','INDISPONIVEL')"/>
+            <column name="recepcao_evento" type="ENUM('DISPONIVEL','INDISPONIVEL')"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="00000000000000-3" author="Charles Chaclim">
+        <addForeignKeyConstraint referencedColumnNames="id"
+                                 baseColumnNames="estado_id"
+                                 referencedTableName="estado"
+                                 baseTableName="historico_disponibilidade"
+                                 constraintName="fk_historicoDisponibilidade_on_estado"/>
+    </changeSet>
+
+</databaseChangeLog>
